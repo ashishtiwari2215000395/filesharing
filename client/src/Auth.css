@@ -1,0 +1,141 @@
+/* Auth.css */
+
+/* General Styles for Container */
+.auth-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #007bff; /* Blue background color */
+    background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%); /* Keep gradient effect */
+    animation: gradientAnimation 5s ease-in-out infinite alternate;
+  }
+  
+  /* Gradient Animation */
+  @keyframes gradientAnimation {
+    0% {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    }
+    50% {
+      background: linear-gradient(135deg, #2575fc 0%, #6a11cb 100%);
+    }
+    100% {
+      background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+    }
+  }
+  
+  /* Auth Box Styling */
+  .auth-box {
+    background: rgba(255, 255, 255, 0.95); /* Semi-transparent white background */
+    padding: 40px 30px;
+    border-radius: 15px;
+    box-shadow: 0px 15px 45px rgba(0, 0, 0, 0.1);
+    width: 360px;
+    transform: translateY(50px);
+    opacity: 0;
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  /* Fade-in Effect */
+  @keyframes fadeIn {
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Heading Styles */
+  .auth-box h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #333;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+  }
+  
+  /* Form Styling */
+  .auth-box form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Input Field Styling */
+  .auth-box input {
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background-color: #f9f9f9;
+  }
+  
+  /* Input Focus Effect */
+  .auth-box input:focus {
+    border-color: #2575fc;
+    outline: none;
+    box-shadow: 0 0 8px rgba(37, 117, 252, 0.6);
+    background-color: #ffffff;
+  }
+  
+  /* Button Styling */
+  .auth-box button {
+    padding: 14px;
+    background-color: #2575fc;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  /* Button Hover Effect */
+  .auth-box button:hover {
+    background-color: #1a5edb;
+    transform: translateY(-3px);
+  }
+  
+  /* Paragraph Styling (for links) */
+  .auth-box p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Link Styling */
+  .auth-box a {
+    color: #2575fc;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  .auth-box a:hover {
+    text-decoration: underline;
+    color: #1a5edb;
+  }
+  
+  /* Specific Login Page Styling */
+  .login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Specific Signup Page Styling */
+  .signup-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Animation for Input Focus */
+  .auth-box input:focus {
+    border-color: #2575fc;
+    box-shadow: 0 0 5px rgba(37, 117, 252, 0.7);
+    background-color: #ffffff;
+  }
+  
